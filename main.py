@@ -196,9 +196,6 @@ def solve(supply_list, demand_list, buy_cost, sell_cost, transport_cost_list):
     while sum(supply_list) != 0 and sum(demand_list) != 0:
         find_largest_element(profit, supply_list, demand_list, result, solution_records)
 
-    for row in result:
-        print(row)
-
     result_list = result
     total_profit = calculate_total_profit(buy_cost, sell_cost, transport_cost_list, result_list)
     total_transport_cost = calculate_total_transport_cost(transport_cost_list, result_list)
